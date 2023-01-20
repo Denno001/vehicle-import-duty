@@ -82,5 +82,5 @@ fig
 ('---')
 
 st.write('''
-Build with :heart: by Dennis Mutua
+Built with :heart: by Dennis Mutua
 ''')
