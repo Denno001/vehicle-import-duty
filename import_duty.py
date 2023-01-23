@@ -19,8 +19,8 @@ CIF_USD = st.sidebar.number_input ('Enter CIF in USD', value=0)
 car = st.sidebar.number_input('Engine size in cc', value=0)
 
 #...converting USD to KES
-st.sidebar.write('1USD = 124 KES')
-FX = 124
+st.sidebar.write('1USD = 124.1601 KES')
+FX = 124.1601
 CIF_KES = CIF_USD * FX
 st.sidebar.write('CIF in KES :    ' + f'{CIF_KES:,}')
 
