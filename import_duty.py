@@ -10,7 +10,7 @@ st.write('''
 # App to Calculate Vehicle Import Duty in Kenya
 ##### This web app uses calculation stipulated by [Kenya Revenue Authority](https://www.kra.go.ke/news-center/blog/1075-what-you-need-to-know-when-importing-a-motor-vehicle) on import of motor vehicle.
 * ##### The app assumes that the vehicle has met the Kenya Bureau of Standards KS 1515:2000 – Code of Practice for Inspection of Road Vehicles before clearance.
-* ##### The app uses real time exchange rates from [Exchange Rate API](https://exchangeratesapi.io/)
+* ##### The app uses real time exchange rates from [Exchange Rates API](https://exchangeratesapi.io/)
 * ##### Also note, other charges like port charges and registration fee(NTSA) are not captured. Hence, calculations generated from the app can only be used as a guidleine but not as the exact costs of importing the vehicle
 ''')
 ('---')
@@ -26,6 +26,7 @@ response = requests.get(url)
 data = response.json()
 
 #..filtering data to get only KES row
+st.write('USD to KES Conversion Rate')
 df2 = pd.DataFrame(response.json())
 df2 = df2.iloc[71:72 ,4:]
 df2.drop('time_next_update_unix', axis=1,inplace=True)
