@@ -26,7 +26,9 @@ response = requests.get(url)
 data = response.json()
 
 #..filtering data to get only KES row
-st.write('USD to KES Conversion Rate')
+st.write('''
+##### USD to KES Conversion Rate
+''')
 df2 = pd.DataFrame(response.json())
 df2 = df2.iloc[71:72 ,4:]
 df2.drop('time_next_update_unix', axis=1,inplace=True)
