@@ -17,4 +17,8 @@ The app will first convert the CIF from USD to KES using real time exchange rate
 It will tereafter compute for all other taxes and levies included then return every one of them plus a row for total taxes and the last one for CIF plus total taxes as shown below.
 >
 ![image 2](https://user-images.githubusercontent.com/121600705/214528698-2745919e-4477-4364-821c-ecf1fe2b742d.PNG)
+## Visualization
+After the calculations, the app will display an horizontal bar chart comparing the total cost + duties to CIF and duties of importing the vehicle as shown. This provides the user with a visual and numeric representation the total amount of importing the car and how much of it will go to taxes.
+>
+![image3](https://user-images.githubusercontent.com/121600705/214530335-7755b035-4a6a-43ba-816d-a103909aedf1.PNG)
 
