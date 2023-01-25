@@ -11,6 +11,9 @@
 ## How does the app work?
 >The image below is what comes up as the front page once the app is opened.
 >
-![My image](C:/Users/denno/Desktop/image.jpg?raw=true "Title")
 ![image](https://user-images.githubusercontent.com/121600705/214526083-1a3cacdd-cbbd-4c4e-b126-a8a2a996841b.PNG)
+>On the sidebar, the user will thereby eneter the price of the vehicle (CIF) in USD and its engine size in cc.
+The app will first convert the CIF from USD to KES using real time exchange rates from an exchange rate API.
+It will tereafter compute for all other taxes and levies included then return every one of them plus a row for total taxes and the last one for CIF plus total taxes as shown below.
+![image 2](https://user-images.githubusercontent.com/121600705/214528698-2745919e-4477-4364-821c-ecf1fe2b742d.PNG)
 
