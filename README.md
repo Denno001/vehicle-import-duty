@@ -9,3 +9,5 @@
 >The app seeks to helps potential car owners compute for expected import duty if they seek to import a car listed on the websites of overseas car dealers. Potential car owners often find themselves having to contact finance specialists to compute them what it would cost if they were to import a certain car. The app will also make work easier and efficient for financial experts in the car industry.
 
 ## How does the app work?
+>The image below is what comes up as the front page once the app is opened.
+![Alt](C: denno/Desktop/image)
