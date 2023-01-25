@@ -10,4 +10,4 @@
 
 ## How does the app work?
 >The image below is what comes up as the front page once the app is opened.
-![Alt](C: denno/Desktop/image)
+>![Alt](C: denno/Desktop/image)
