@@ -6,6 +6,6 @@
 >
 >Even to guys working in accounts and finance departments, it would be hectic to compute for the taxes and levies using a pen, book and calculator as it also increases the margin of error significantly moreso when a large number of cars is involved.
 >
-The app seeks to helps potential car owners compute for expected import duty if they seek to import a car listed on the websites of overseas car dealers. Potential car owners often find themselves having to contact finance specialists to compute them what it would cost if they were to import a certain car. The app will also make work easier and efficient for financial experts in the car industry.
+>The app seeks to helps potential car owners compute for expected import duty if they seek to import a car listed on the websites of overseas car dealers. Potential car owners often find themselves having to contact finance specialists to compute them what it would cost if they were to import a certain car. The app will also make work easier and efficient for financial experts in the car industry.
 
 ## How does the app work?
