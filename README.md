@@ -11,4 +11,4 @@
 ## How does the app work?
 >The image below is what comes up as the front page once the app is opened.
 >
-![My image](C:/Users/denno/Desktop/image.PNG)
+![My image](C:/Users/denno/Desktop/image.jpg)
