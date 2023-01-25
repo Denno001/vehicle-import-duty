@@ -12,3 +12,5 @@
 >The image below is what comes up as the front page once the app is opened.
 >
 ![My image](C:/Users/denno/Desktop/image.jpg?raw=true "Title")
+![image](https://user-images.githubusercontent.com/121600705/214526083-1a3cacdd-cbbd-4c4e-b126-a8a2a996841b.PNG)
+
