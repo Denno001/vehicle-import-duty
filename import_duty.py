@@ -2,9 +2,10 @@ import streamlit as st
 import math as math
 import pandas as pd
 import plotly.express as px
-import requests
-import json
 import yfinance as yf
+#import requests
+#import json
+
 
 #...app header and subheader......
 st.write('''
