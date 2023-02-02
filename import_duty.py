@@ -4,13 +4,14 @@ import pandas as pd
 import plotly.express as px
 import requests
 import json
+import yfinance as yf
 
 #...app header and subheader......
 st.write('''
 # App to Calculate Vehicle Import Duty in Kenya
 ##### This web app uses calculation stipulated by [Kenya Revenue Authority](https://www.kra.go.ke/news-center/blog/1075-what-you-need-to-know-when-importing-a-motor-vehicle) on import of motor vehicle.
 * ##### The app assumes that the vehicle has met the Kenya Bureau of Standards KS 1515:2000 – Code of Practice for Inspection of Road Vehicles before clearance.
-* ##### The app uses real time exchange rates from [Exchange Rates API](https://exchangeratesapi.io/)
+* ##### The app uses real time exchange rates from [Yahoo Finance](https://finance.yahoo.com/)
 * ##### Also note, other charges like port charges and registration fee(NTSA) are not captured. Hence, calculations generated from the app can only be used as a guidleine but not as the exact costs of importing the vehicle
 ''')
 ('---')
@@ -21,23 +22,27 @@ CIF_USD = st.sidebar.number_input ('Enter CIF in USD', value=0)
 car = st.sidebar.number_input('Engine size in cc', value=0)
 
 #..extracting exchange rate data from exchange rate api
-url = 'https://v6.exchangerate-api.com/v6/25b9f38de08d7fedd64385d2/latest/USD'
-response = requests.get(url)
-data = response.json()
+#url = 'https://v6.exchangerate-api.com/v6/25b9f38de08d7fedd64385d2/latest/USD'
+#response = requests.get(url)
+#data = response.json()
 
 #..filtering data to get only KES row
+#df2 = pd.DataFrame(response.json())
+#df2 = df2.iloc[71:72 ,4:]
+#df2.drop('time_next_update_unix', axis=1,inplace=True)
+#df2['conversion_rates'] = df2['conversion_rates'].astype('float')
+#df2
+
+#using yfinance data......
+FX = yf.download('USDKES=X', start='2023-01-01')['Adj Close'][-1]
 st.write('''
-##### USD to KES Conversion Rate
+###### Conversion Rate From Yahoo Finance
 ''')
-df2 = pd.DataFrame(response.json())
-df2 = df2.iloc[71:72 ,4:]
-df2.drop('time_next_update_unix', axis=1,inplace=True)
-df2['conversion_rates'] = df2['conversion_rates'].astype('float')
-df2
+st.write('1USD : ' + str(FX))
 ('---')
 
 #...converting USD to KES
-CIF_KES = math.trunc(df2.iloc[0,3]) * CIF_USD
+CIF_KES = math.trunc(FX) * CIF_USD
 
 st.sidebar.write('CIF in KES:  ' + f'{CIF_KES:,}')
 
@@ -101,4 +106,3 @@ fig
 st.write('''
 Built with :heart: by Dennis Mutua
 ''')
-
