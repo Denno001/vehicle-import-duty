@@ -1,6 +1,6 @@
 yfinance
 pandas
 plotly
-requests
-json
+
+
 
